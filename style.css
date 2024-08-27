@@ -159,3 +159,27 @@ footer .foot-right a {
   font-weight: bold;
   background-color: rgba(0,0,255,.8);
 }
+.change-lang {
+  width: 50px;
+  height: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 200px;
+  top: 15px;
+  color: white;
+  /* padding: 2px; */
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.8);
+  text-decoration: none;
+}
+.change-lang div {
+  /* background-color: blue; */
+  padding: 2px;
+}
+.selected {
+  background-color: grey;
+}
