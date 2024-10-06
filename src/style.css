@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Para telas de smartphones */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+  }
+  nav {
+    width: auto;
+    /* height: 120px; */
+    height: 140px;
+    background-color: grey;
+    border-bottom: 2px solid grey;
+  }
+  nav .top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  nav .logo {
+    background-color: red;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+  nav p {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: white;
+  }
+  nav .bottom ul {
+    display: flex;
+    list-style: none;
+    font-size: 0.5em;
+    justify-content: center;
+  }
+  nav .bottom ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* nav .bottom ul li:hover { */
+  /*   background-color: cadetblue; */
+  /* } */
+  /* nav .bottom ul li a { */
+  /*   text-decoration: none; */
+  /*   color: white; */
+  /*   font-size: 18px; */
+  /* } */
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
