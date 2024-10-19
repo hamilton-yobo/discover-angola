@@ -1,44 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
     <title>Discover Angola</title>
   </head>
   <body>
-    <nav>
-      <div class="top">
-        <div class="logo"></div>
-        <p>Discover Angola</p>
+    <nav class="bg-slate-900 w-screen h-40 p-2 items-center lg:px-20">
+      <div class="flex md:ml-4 md:mt-4">
+        <div class="w-10 h-10 bg-red-700 rounded-full text-red-50"></div>
+        <p class="text-lg font-bold pl-4 text-white">Discover Angola</p>
       </div>
-      <div class="bottom">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="angola-historia.html">História</a></li>
-          <li><a href="angola-estados.html">Estados</a></li>
-          <li><a href="angola-gastronomia.html">Gastronomia</a></li>
-          <li class="selected-li"><a href="#">7 Maravilhas de Angola</a></li>
+      <div class="pt-7">
+        <ul
+          class="w-full inline-flex flex-wrap content-center align-middle justify-center text-white"
+        >
+          <li class="mx-4 lg:mx-8"><a href="../index.html">Inicio</a></li>
+          <li class="mx-4 lg:mx-8">
+            <a href="./angola-historia.html">História</a>
+          </li>
+          <li class="mx-4 lg:mx-8">
+            <a href="angola-estados.html">Estados</a>
+          </li>
+          <li class="mx-4 lg:mx-8">
+            <a href="angola-gastronomia.html">Gastronomia</a>
+          </li>
+          <li class="mx-4 lg:mx-8 bg-sky-500 text-gray-200">
+            <a href="sete-maravilhas-angola.html">7 Maravilhas de Angola</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <footer>
-      <div class="foot-left">
-        <p>Criado por:</p>
+    <footer
+      class="mt-6 bg-slate-900 text-xs font-bold text-gray-400 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 p-2 md:p-4 lg:flex lg:justify-center"
+    >
+      <div
+        class="flex justify-end md:justify-center mr-2 md:mr-4 lg:justify-end"
+      >
+        <p class="">Criado por:</p>
       </div>
-      <div class="foot-center">
+      <div class="lg:justify-center">
         <p>Hamilton Yobo</p>
         <p>Engenheiro de Software</p>
         <p>Administrativo</p>
         <p>+244 941 183 848</p>
         <p>hamiltonyobo@hotmail.com</p>
       </div>
-      <div class="foot-right">
-        <a href="pt/contacto.html">Contacto</a>
+      <div
+        class="justify-center md:justify-center flex col-span-2 md:col-span-1"
+      >
+        <a
+          href="contacto.html"
+          class="bg-blue-500 md:bg-transparent text-white rounded md:underline"
+          >Contacte-nos</a
+        >
       </div>
     </footer>
-    <a class="change-lang" href="../en/seven-wonders-angola.html">
-      <div class="unselected">EN</div>
-      <div class="selected">PT</div>
+    <a
+      class="absolute top-4 right-2 flex md:right-4 lg:right-20"
+      href="en/index.html"
+    >
+      <div class="bg-gray-500 font-bold text-gray-400 text-xs rounded-l-sm p-1">
+        EN
+      </div>
+      <div class="bg-emerald-500 font-bold text-white text-xs rounded-r-sm p-1">
+        PT
+      </div>
     </a>
   </body>
 </html>

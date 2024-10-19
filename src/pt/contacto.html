@@ -1,75 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
     <title>Discover Angola</title>
   </head>
-  <body>
-    <nav>
-      <div class="top">
-        <div class="logo"></div>
-        <p>Discover Angola</p>
+  <body
+    class="flex flex-col md:bg-gradient-to-r bg-gradient-to-b from-yellow-300 via-gray-300 via-50% md:via-60% to-black to-70% md:to-80% bg-yellow-300"
+  >
+    <nav class="bg-slate-900 w-screen h-40 p-2 items-center lg:px-20">
+      <div class="flex md:ml-4 md:mt-4">
+        <div class="w-10 h-10 bg-red-700 rounded-full text-red-50"></div>
+        <p class="text-lg font-bold pl-4 text-white">Discover Angola</p>
       </div>
-      <div class="bottom">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li class="selected-li"><a href="angola-historia.html">História</a></li>
-          <li><a href="angola-estados.html">Estados</a></li>
-          <li><a href="angola-gastronomia.html">Gastronomia</a></li>
-          <li><a href="sete-maravilhas-angola.html">7 Maravilhas de Angola</a></li>
+      <div class="pt-7">
+        <ul
+          class="w-full inline-flex flex-wrap content-center align-middle justify-center text-white"
+        >
+          <li class="mx-4 lg:mx-8"><a href="../index.html">Inicio</a></li>
+          <li class="mx-4 lg:mx-8">
+            <a href="./angola-historia.html">História</a>
+          </li>
+          <li class="mx-4 lg:mx-8">
+            <a href="angola-estados.html">Estados</a>
+          </li>
+          <li class="mx-4 lg:mx-8">
+            <a href="angola-gastronomia.html">Gastronomia</a>
+          </li>
+          <li class="mx-4 lg:mx-8">
+            <a href="sete-maravilhas-angola.html">7 Maravilhas de Angola</a>
+          </li>
         </ul>
       </div>
     </nav>
-
-    <form action="#" method="post" class="contact-form">
-      <fieldset>
-        <legend>Contacte-me</legend>
-
-        <div>
-          <label for="firstName">Primeiro Nome</label>
-          <input type="text" id="firstName" name="firstName"/>
-        </div>
-
-        <div>
-          <label for="lastName">Último Nome</label>
-          <input type="text" id="lastName" name="lastName"/>
-        </div>
-
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email"/>
-        </div>
-
-        <div>
-          <label for="content">Conteúdo</label>
-          <textarea id="content" name="content"></textarea>
-        </div>
-
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
-      </fieldset>
-    </form>
-
-    <footer>
-      <div class="foot-left">
-        <p>Criado por:</p>
+    <article class="md:flex md:justify-center md:items-center md:px-4">
+      <div class="hidden md:flex flex-col">
+        <h1 class="font-bold text-sky-900 text-6xl mb-4">
+          Ajude-nos a crescer
+        </h1>
+        <p class="text-lg">
+          Conte-nos a sua ideia, ou contribua com o que for possível.
+        </p>
       </div>
-      <div class="foot-center">
+
+      <form
+        action="#"
+        method="post"
+        class="w-fit md:w-[400px] m-auto mt-4 mb-4 p-2 border border-gray-300 rounded md:mx-1"
+      >
+        <fieldset>
+          <legend class="font-thin text-sm mb-2">Envie uma mensagem</legend>
+
+          <div class="flex flex-col w-4/5 m-auto">
+            <label for="firstName" class="m-auto">Primeiro Nome</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="border border-gray-400 my-2 px-2 rounded"
+            />
+          </div>
+
+          <div class="flex flex-col w-4/5 m-auto">
+            <label for="lastName" class="m-auto">Último Nome</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="border border-gray-400 my-2 px-2 rounded"
+            />
+          </div>
+
+          <div class="flex flex-col w-4/5 m-auto">
+            <label for="email" class="m-auto">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="border border-gray-400 my-2 px-2 rounded"
+            />
+          </div>
+
+          <div class="flex flex-col w-4/5 m-auto">
+            <label for="content" class="m-auto">Conteúdo</label>
+            <textarea
+              id="content"
+              name="content"
+              class="border border-gray-400 my-2 px-2 rounded h-32"
+            ></textarea>
+          </div>
+
+          <div
+            class="border border-sky-400 bg-sky-900 rounded m-auto w-20 flex justify-center ring-offset-2 ring-2"
+          >
+            <button type="submit" class="text-gray-200 font-bold text-lg">
+              Enviar
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </article>
+    <footer
+      class="mt-6 bg-slate-900 text-xs font-bold text-gray-400 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 p-2 md:p-4 lg:flex lg:justify-center"
+    >
+      <div
+        class="flex justify-end md:justify-center mr-2 md:mr-4 lg:justify-end"
+      >
+        <p class="">Criado por:</p>
+      </div>
+      <div class="lg:justify-center">
         <p>Hamilton Yobo</p>
         <p>Engenheiro de Software</p>
         <p>Administrativo</p>
         <p>+244 941 183 848</p>
         <p>hamiltonyobo@hotmail.com</p>
       </div>
-      <div class="foot-right">
-        <a href="#">Contacto</a>
+      <div
+        class="justify-center md:justify-center flex col-span-2 md:col-span-1"
+      >
+        <a
+          href="contacto.html"
+          class="bg-blue-500 md:bg-transparent text-white rounded md:underline"
+          >Contacte-nos</a
+        >
       </div>
     </footer>
-    <a class="change-lang" href="../en/contact.html">
-      <div class="unselected">EN</div>
-      <div class="selected">PT</div>
+    <a
+      class="absolute top-4 right-2 flex md:right-4 lg:right-20"
+      href="../en/contact.html"
+    >
+      <div class="bg-gray-500 font-bold text-gray-400 text-xs rounded-l-sm p-1">
+        EN
+      </div>
+      <div class="bg-emerald-500 font-bold text-white text-xs rounded-r-sm p-1">
+        PT
+      </div>
     </a>
   </body>
 </html>
